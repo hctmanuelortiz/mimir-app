@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+// Use flex to keep the footer at the bottom.
+body,
+[data-apos-refreshable],
+.bp-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-apos-refreshable],
+.bp-wrapper,
+main {
+  flex-grow: 1;
+}
+
+body {
+  min-height: 100vh;
+  // Nice system fonts.
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* esto lo agregue yo */
+  background-color: #0d0e3f;  
+}
+
+.bp-header,
+main,
+.bp-footer {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 40px 0;
+}
+
+.bp-footer {
+  padding: 40px 0; 
+}
+
+.bp-footer__links {
+  padding-left: 0px;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  li:last-child { margin-right: 0; }
+}
+
+.bp-header__logo {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.bp-header__login {
+
+  &:visited {
+    color: white;
+  }
+}
+ /* Personalizacion: team 7 */
+
+ #homeSeccion {
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+ }
+
+ #homeSeccion a {
+  margin: 12px;
+  color: #d5b502;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+ }
+
+.bp-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bp-content h1 {
+  color: #007eb2;
+  font-weight: bolder;
+}
+
+.bp-content h3 {
+  color: #007eb2;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.bp-content strong {
+  color: #c67fbe;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.bp-content p {
+  color: #64c8b6;
+  font-weight: 600;
+}
+
+.bp-content a {
+  color: #d5b502;
+  font-weight: 600;
+  text-align: center;
+}
+
